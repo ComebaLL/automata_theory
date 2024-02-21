@@ -1,1 +1,2 @@
 E:\ЗАБгу\3ий курс\теория автоматов\lab1\x64\Debug\lab1.exe
+C:\Users\gumba\OneDrive\Документы\GitHub\automata_theory\lab1\x64\Debug\lab1.exe

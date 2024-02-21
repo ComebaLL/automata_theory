@@ -1,7 +1,7 @@
 ﻿  lab1.cpp
-E:\ЗАБгу\3ий курс\теория автоматов\lab1\lab1.cpp(148,30): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-E:\ЗАБгу\3ий курс\теория автоматов\lab1\lab1.cpp(154,30): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-E:\ЗАБгу\3ий курс\теория автоматов\lab1\lab1.cpp(243,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-E:\ЗАБгу\3ий курс\теория автоматов\lab1\lab1.cpp(293,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-E:\ЗАБгу\3ий курс\теория автоматов\lab1\lab1.cpp(336,17): warning C4566: символ, представленный универсальным именем символа "\u03B5", невозможно представить в текущей кодовой странице (1251)
-  lab1.vcxproj -> E:\ЗАБгу\3ий курс\теория автоматов\lab1\x64\Debug\lab1.exe
+C:\Users\gumba\OneDrive\Документы\GitHub\automata_theory\lab1\lab1.cpp(149,30): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\gumba\OneDrive\Документы\GitHub\automata_theory\lab1\lab1.cpp(155,30): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\gumba\OneDrive\Документы\GitHub\automata_theory\lab1\lab1.cpp(244,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\gumba\OneDrive\Документы\GitHub\automata_theory\lab1\lab1.cpp(294,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\gumba\OneDrive\Документы\GitHub\automata_theory\lab1\lab1.cpp(337,17): warning C4566: символ, представленный универсальным именем символа "\u03B5", невозможно представить в текущей кодовой странице (1251)
+  lab1.vcxproj -> C:\Users\gumba\OneDrive\Документы\GitHub\automata_theory\lab1\x64\Debug\lab1.exe

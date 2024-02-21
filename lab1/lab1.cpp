@@ -56,6 +56,7 @@ public:
                 size_t findPos = result.find(rule.Key);
                 if ((pos > findPos || pos == std::string::npos) && findPos != std::string::npos) {
                     pos = findPos;
+                    break;
                 }
             }
 
@@ -293,7 +294,7 @@ int main() {
     srand(time(0));
 
     // Целевая цепочка для 2-го варианта
-    std::string targetChain2 = "abc";
+    std::string targetChain2 = "aaabbbccc";
 
     // Генерируем и трансформируем цепочку в цикле (2-й вариант)
     std::string generatedChain2;
