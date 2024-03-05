@@ -86,11 +86,8 @@ public:
     std::string Translate(std::string text) {
         int count = 0;
         bool isEnd = false;
-        while (count < MaxRepetitionsCount) {
-            if (isEnd) break;
-
+        while (count < MaxRepetitionsCount && !isEnd) {
             count++;
-            isEnd = true;
 
             for (Rule& rule : _rules) {
                 if (!rule.IsLooped) {
@@ -212,11 +209,67 @@ public:
     }
 };
 
+// Функция для преобразования праволинейной грамматики в леволинейную
+std::vector<Rule> convertToLeftLinear(const std::vector<Rule>& rightLinearRules) {
+    std::vector<Rule> leftLinearRules;
+
+    // Для каждого правила праволинейной грамматики
+    for (const Rule& rightRule : rightLinearRules) {
+        // Создаем соответствующее правило леволинейной грамматики
+        Rule leftRule(rightRule.Key, rightRule.Value);
+
+        // Перемещаем первый символ в конец порождаемой цепочки
+        leftRule.Value = rightRule.Value.substr(1) + rightRule.Value[0];
+
+        // Добавляем новое правило в вектор леволинейных правил
+        leftLinearRules.push_back(leftRule);
+    }
+
+    return leftLinearRules;
+}
+
 
 #include <ctime>  // Для использования time в srand
+#include <regex>
 
 int main() {
-    //задание 1
+
+    std::cout << "№11" << std::endl;
+    // Ввод правил праволинейной грамматики (a) по умолчанию
+    std::vector<Rule> rightLinearRulesA = {
+        {"S", "0S|0B"},
+        {"B", "1B|1C"},
+        {"C", "1C|"}
+    };
+
+    // Преобразование в леволинейную грамматику
+    std::vector<Rule> leftLinearRulesA = convertToLeftLinear(rightLinearRulesA);
+
+    // Вывод леволинейных правил (a)
+    std::cout << "(A):" << std::endl;
+    for (const Rule& leftRule : leftLinearRulesA) {
+        std::cout << leftRule.Key << " -> " << leftRule.Value << std::endl;
+    }
+
+    // Ввод правил праволинейной грамматики (б) по умолчанию
+    std::vector<Rule> rightLinearRulesB = {
+        {"S", "aA|aB|bA"},
+        {"A", "bS"},
+        {"B", "aS|bB|"}
+    };
+
+    // Преобразование в леволинейную грамматику
+    std::vector<Rule> leftLinearRulesB = convertToLeftLinear(rightLinearRulesB);
+
+    // Вывод леволинейных правил (б)
+    std::cout << "\n(B):" << std::endl;
+    for (const Rule& leftRule : leftLinearRulesB) {
+        std::cout << leftRule.Key << " -> " << leftRule.Value << std::endl;
+    }
+
+
+
+    /* //задание 1
     std::cout << "№1" << std::endl;
     // Создаем правила для формального языка (1-й вариант)
     std::vector<Rule> rules1 = {
@@ -320,7 +373,7 @@ int main() {
     std::string treeResult2 = grammar2.MakeTree(generatedChain2);
 
     //задания 2
-    
+
     // Подпункт a)
     std::cout << "№2:" << std::endl;
     std::cout << "a):" << std::endl;
@@ -416,8 +469,9 @@ int main() {
 
     std::cout << "Chain: " << flC.Translate("S") << std::endl;
     std::cout << std::endl;
+    */
     return 0;
-       
+
 }
 
 
