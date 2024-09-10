@@ -1,0 +1,9 @@
+﻿  Lab4.cpp
+D:\ЗАБгу\3ий курс\теория автоматов\Lib\Minimization.h(110,64): warning C4267: аргумент: преобразование из "size_t" в "_Ty"; возможна потеря данных
+D:\ЗАБгу\3ий курс\теория автоматов\Lib\Minimization.h(110,64): warning C4267:         with
+D:\ЗАБгу\3ий курс\теория автоматов\Lib\Minimization.h(110,64): warning C4267:         [
+D:\ЗАБгу\3ий курс\теория автоматов\Lib\Minimization.h(110,64): warning C4267:             _Ty=int
+D:\ЗАБгу\3ий курс\теория автоматов\Lib\Minimization.h(110,64): warning C4267:         ]
+  (компиляция исходного файла "Lab4.cpp")
+  
+  Lab4.vcxproj -> D:\ЗАБгу\3ий курс\теория автоматов\Lab4\x64\Debug\Lab4.exe

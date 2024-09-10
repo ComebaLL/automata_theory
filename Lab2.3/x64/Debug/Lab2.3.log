@@ -1,0 +1,8 @@
+﻿  Lab2.3.cpp
+B:\!!Mye\Study\3 class\6 semester\Theory automat\Work\Lib\FormalLanguage.h(123,55): warning C4267: аргумент: преобразование из "size_t" в "_Ty"; возможна потеря данных
+          with
+          [
+              _Ty=int
+          ]
+B:\!!Mye\Study\3 class\6 semester\Theory automat\Work\Lib\FormalLanguage.h(184,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Lab2.3.vcxproj -> B:\!!Mye\Study\3 class\6 semester\Theory automat\Work\Lab2.3\x64\Debug\Lab2.3.exe
