@@ -71,14 +71,9 @@ int main()
     list<Rule> dict =
     {
         Rule("S", "A0"),
-        Rule("S", "A1"),
-        Rule("S", "B1"),
-        Rule("S", "0"),
-        Rule("S", "1"),
-        Rule("A", "A1"),
-        Rule("A", "B1"),
-        Rule("A", "1"),
-        Rule("B", "A0")
+        Rule("A", "A0"),
+        Rule("A", "S1"),
+        Rule("A", "0"),
 
     };
 
